@@ -1,0 +1,39 @@
+<html>
+<head></head>
+<body>
+
+    <div id="d1">
+
+    </div>
+    <div id="d2">
+
+    </div>
+
+    <script>
+
+        var names = ["tushar", "nilesh", "rohan", "suraj", "kishor", "amol"];
+
+       
+        
+        names.push("rahul"); 
+        names.unshift("parth"); 
+        names.unshift("rajesh");
+        names.pop(); 
+        names.shift();  
+
+        
+        names.splice(1, 0, "ganesh", "sujeet", "vivek");
+
+        var newlist = names.slice(2, 8);  
+        names.sort();
+        names.reverse();
+        document.getElementById("d1").innerHTML = names;
+        document.getElementById("d2").innerHTML = newlist;
+
+
+    </script>
+
+
+
+</body>
+</html>
